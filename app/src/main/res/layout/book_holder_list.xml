@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:padding="50dp"
-        android:text="Player's nickname"
+        android:text="Название"
         android:fontFamily="@font/font"
         android:textColor="@color/black"
         android:textSize="30sp" />

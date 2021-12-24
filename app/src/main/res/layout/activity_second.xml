@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/players_nick"
+            android:id="@+id/players_nick1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/font"
@@ -22,7 +22,29 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/players_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:text="Название"
+            android:textColor="#5b39c6"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/players_nick1" />
+
+        <TextView
             android:id="@+id/players_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:fontFamily="@font/font"
+            android:gravity="center"
+            android:textColor="#5b39c6"
+            android:text="Описание"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf="@id/players_desc1" />
+        <TextView
+            android:id="@+id/players_desc1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="75dp"
@@ -32,6 +54,8 @@
             android:text="Описание"
             android:textSize="30sp"
             app:layout_constraintTop_toBottomOf="@id/players_nick" />
+
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,5 @@
 package AdapterBook;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,13 +12,11 @@ import java.util.ArrayList;
 
 import com.example.lesson40.R;
 
-import org.w3c.dom.Text;
 
 import model.BookModel;
 
 public class AdapterBook extends RecyclerView.Adapter<AdapterBook.HolderBook> {
-    String title;
-    String desc;
+
 
     ArrayList<BookModel> list;
     private RecyclerViewClickListener recyclerViewClickListener;
@@ -62,11 +59,11 @@ public class AdapterBook extends RecyclerView.Adapter<AdapterBook.HolderBook> {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(recyclerViewClickListener != null) {
-                        int position = getAdapterPosition();
+                    if (recyclerViewClickListener != null) {
+                     int position = getAdapterPosition();
 
-                        if(position != RecyclerView.NO_POSITION) {
-                            recyclerViewClickListener.onNoteClick(position);
+                    if (position != RecyclerView.NO_POSITION) {
+                         recyclerViewClickListener.onNoteClick(position);
                         }
                     }
 

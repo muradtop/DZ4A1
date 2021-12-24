@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
     public void onNoteClick(int position) {
         list.get(position);
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra("Player's Name", list.get(position).getName());
-        intent.putExtra("Player's desc", list.get(position).getDescription());
+        intent.putExtra("Название", list.get(position).getName());
+        intent.putExtra("Описание", list.get(position).getDescription());
         startActivity(intent);
     }
 }
